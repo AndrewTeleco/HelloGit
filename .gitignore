@@ -1,0 +1,30 @@
+# Ignorar archivos del sistema operativo
+.DS_Store # Archivos de macOS
+Thumbs.db # Archivos de Windows
+
+# Ignorar archivos temporales y de registro
+*.log
+temp/
+tmp/
+
+# Ignorar directorios de dependencias y compilación
+node_modules/      # Común en proyectos Node.js/JavaScript
+build/             # Directorio de salida de compilaciones
+dist/              # Directorio de distribución
+target/            # Común en proyectos Java (Maven/Gradle)
+.venv/             # Entornos virtuales de Python
+
+# Ignorar archivos de configuración sensibles o generados localmente
+.env               # Archivos de variables de entorno (pueden contener credenciales)
+config.local.js    # Archivos de configuración local
+api_keys.txt       # Archivos que contienen claves API u otras credenciales
+
+# Ignorar archivos específicos generados por editores o IDEs
+.vscode/           # Configuraciones de VS Code
+
+# Ignorar archivos de paquetes y caché
+*.pyc              # Archivos de caché de Python
+*.class            # Archivos de clases de Java
+
+# Excepción: ignorar todo en una carpeta excepto un archivo específico
+!config/config.production.js # Ignora todo en 'config/' excepto este archivo específico
